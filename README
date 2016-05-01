@@ -1,0 +1,49 @@
+This repository is for the primary purpose of testing Q/A tools like repoman.
+
+The ebuilds it contains are for testing specific areas of tests that are
+performed as part of the normal operation of that Q/A tool.
+
+This repository is open to all Gentoo developers under the following rules:
+
+1) The master branch is to remain the stable Q/A testing branch.
+
+2) All ebuilds are to be minimal test cases.
+
+3) All ebuilds in it are to have no more than 3 or 4 flaws to detect.
+   This makes it easier to spot errors during code development.  Simply running
+   repoman in a category should be enough to test everything the module tests.
+   This excludes some commit only checks which can be run in a local only branch.
+
+4) All category names are to represent the Q/A category being tested.
+      ie:
+          ebuild-test - tests various aspects of the ebuild repoman module
+          eclass-test - various eclass module tests
+          ...
+
+5) like the category naming, the package naming will follow the test
+   being performed.
+       ie:
+           eclass-test/live-keywords - test the eclass module LiveEclassChecks
+                                       keywords check
+           ebuild-test/invalid - test for invalid package name detection
+
+6) Profiles ... Not sure about this one, but probaly will have masters=gentoo
+   That should ensure it maintains co-ordination with the main gentoo repo.
+   All new or modified eclasses that affect pkg metadata should be validated in
+   a branch.
+
+7) New module development and test ebuilds will be done in a branch or personal
+   repo and submitted to the gentoo-portage-dev email list for review and
+   approval to merge into master.
+   NOTE: This rule is lifted for the initial creation and population of
+         test ebuilds to use to test out the repoman code.  An anouncemnt to
+         the gentoo-project email list will be made when this initial population
+         period is being ended.
+
+8) Signed commits only, also signed-pushes are mandatory
+
+9) The metadata category will get files of validated output that can be used
+   to verify code changes in the various categories and repo wide runs.
+   Diffing the output, should help to verify code changes did not break anything.
+
+10) See rules 1-9 :-)
