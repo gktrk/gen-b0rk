@@ -1,5 +1,6 @@
 deps-test
 eapi-test
+ebuild-test
 keywords-test
 live-vcs
 xml-test
