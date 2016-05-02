@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <!-- Missing attribute "type" -->
+  <maintainer>
+    <email>foodev@gentoo.org</email>
+  </maintainer>
+  <slots>
+    <!-- Missing attribute "name" -->
+    <slot>Bar slot</slot>
+  </slots>
+  <use>
+    <!-- Missing attribute "name" -->
+    <flag>Baz flag</flag>
+  </use>
+  <upstream>
+    <!-- Missing attribute "type" -->
+    <remote-id>gentoo/gen-b0rk</remote-id>
+  </upstream>
+  <longdescription>
+    Tests for mandatory attributes for various tags
+  </longdescription>
+</pkgmetadata>
