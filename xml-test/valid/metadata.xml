@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<!-- A valid metadata.xml similar to the one specified in GLEP 68 -->
+<pkgmetadata>
+  <maintainer type='person'>
+    <email>developer@example.com</email>
+    <name>Example Developer</name>
+  </maintainer>
+  <maintainer type='project'>
+    <email>project@example.com</email>
+    <name>Example Project</name>
+  </maintainer>
+  <maintainer type='person'>
+    <email>upstream@example.com</email>
+    <name>Upstream Developer</name>
+    <description>Upstream developer, wishing to be CC-ed on bugs</description>
+  </maintainer>
+  <longdescription>
+    First paragraph of extensive description.
+
+    Second paragraph.
+  </longdescription>
+  <longdescription lang='de'>
+    Erster Absatz mit detaillierter Beschreibung.
+
+    Zweiter Absatz.
+  </longdescription>
+  <slots>
+    <slot name='11'>Compatibility slot providing libvalid.so.11 only.</slot>
+    <subslots>
+      Match SONAME of libvalid.so.
+    </subslots>
+  </slots>
+  <slots lang='de'>
+    <slot name='11'>Kompatibilitäts-Slot, installiert ausschließlich libvalid.so.11.</slot>
+    <subslots>
+      Subslot ist stets identisch mit dem SONAME von libvalid.so.
+    </subslots>
+  </slots>
+  <use>
+    <flag name='foo'>Enables foo feature</flag>
+    <flag name='bar' restrict='&lt;xml-test/valid-0.1'>Enables bar feature (requires <pkg>xml-test/missing</pkg>)</flag>
+    <flag name='bar' restrict='&gt;=xml-test/valid-0.1'>Enables bar feature</flag>
+  </use>
+  <use lang='de'>
+    <flag name='foo'>Konfiguriert das Paket mit Unterstütztung für foo</flag>
+    <flag name='bar' restrict='&lt;xml-test/valid-0.1'>Konfiguriert das Paket mit Unterstütztung für bar (benötigt <pkg>xml-test/missing</pkg>)</flag>
+    <flag name='bar' restrict='&gt;=xml-test/valid-0.1'>Konfiguriert das Paket mit Unterstütztung für bar</flag>
+  </use>
+  <upstream>
+    <maintainer status='active'>
+      <email>upstream@example.com</email>
+      <name>Upstream Developer</name>
+    </maintainer>
+    <maintainer status='inactive'>
+      <name>John Smith</name>
+    </maintainer>
+    <changelog>http://www.example.com/releases.html</changelog>
+    <doc>http://www.example.com/doc.html</doc>
+    <doc lang='de'>http://www.example.com/doc.de.html</doc>
+    <bugs-to>http://www.example.com/issues.html</bugs-to>
+    <remote-id type='github'>gentoo/gen-b0rk</remote-id>
+  </upstream>
+</pkgmetadata>
