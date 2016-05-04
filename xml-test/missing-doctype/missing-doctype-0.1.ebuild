@@ -5,6 +5,7 @@
 EAPI=6
 
 DESCRIPTION="Metadata with missing DOCTYPE"
+HOMEPAGE="https://wiki.gentoo.org/wiki/GLEP:68"
 LICENSE="HPND"
 SLOT="0"
 KEYWORDS="~amd64"
