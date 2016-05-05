@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <longdescription>
+    Tests for invalid attribute values and attributes appearing
+    in elements that they're not supposed to.
+
+    There's a multitude of invalid attribute values and combinations.
+    We only consider a few sane cases that are likely to happen:
+    - type attribute in upstream maintainer (allowed only in downstream)
+    - status attribute in downstream maintainer (allowed only in upstream)
+    - invalid values for enumerated attributes: type, status, lang
+
+    We also introduce multiple violations in a single element to test
+    repoman's ability to display errors.
+  </longdescription>
+  <!--
+      The errors for the following are:
+      (1) invalid value for type
+      (2) status attribute is not allowed in downstream maintainer
+      (3) status attribute has invalid value
+      There's no point in reporting (3) due to (2), so it
+      should only print errors for the first two.
+  -->
+  <maintainer type='cow' status='retired'>
+    <email>larry@gentoo.org</email>
+    <!-- invalid value for lang -->
+    <description lang="english">Moo</description>
+  </maintainer>
+  <upstream>
+    <!-- type attribute isn't allowed in upstream maintainer -->
+    <maintainer status='active' type='person'>
+      <name>Gen B0rk</name>
+    </maintainer>
+    <!-- invalid value for type -->
+    <remote-id type='gen-b0rk'>gentoo/gen-b0rk</remote-id>
+  </upstream>
+</pkgmetadata>
