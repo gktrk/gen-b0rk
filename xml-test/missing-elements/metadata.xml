@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <longdescription>
+    Tests for mandatory elements
+  </longdescription>
+  <!-- Missing element <email> -->
+  <maintainer type='person'>
+    <name>Gen B0rk</name>
+  </maintainer>
+  <upstream>
+    <!-- Missing element <name> -->
+    <maintainer>
+      <email>gen-b0rk@gentoo.org</email>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
