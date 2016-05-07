@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <longdescription>
+    Tests for elements with at most one occurrence.
+
+    Singularity doesn't check for uniqueness. We are only interested
+    in elements that can't appear more than once.
+
+    The tests are conservative: if we check &lt;email&gt; element
+    singularity in downstream maintainer, we do not check it again
+    in upstream maintainer.
+  </longdescription>
+  <maintainer type='person'>
+    <email>gen-b0rk@gentoo.org</email>
+    <!-- multiple <email> elements are not allowed -->
+    <email>at-most-one-violation@gentoo.org</email>
+  </maintainer>
+  <slots>
+    <subslots>Match SONAME of libsingularity.so</subslots>
+    <!-- multiple <subslots> elements are not allowed -->
+    <subslots>at-most-one violation</subslots>
+  </slots>
+  <upstream>
+    <maintainer>
+      <name>Gen B0rk</name>
+      <!-- multiple <name> elements are not allowed -->
+      <name>at-most-one violation</name>
+    </maintainer>
+    <changelog>https://gitweb.gentoo.org/repo/proj/gen-b0rk.git/</changelog>
+    <!-- multiple <changelog> elements are not allowed -->
+    <changelog>https://gentoo.org/at-most-one-violation.html</changelog>
+    <bugs-to>http://www.example.com/issues.html</bugs-to>
+    <!-- multiple <bugs-to> elements are not allowed -->
+    <bugs-to>https://gentoo.org/at-most-one-violation</bugs-to>
+  </upstream>
+  <!-- multiple <upstream> elements are not allowed -->
+  <upstream>
+    <maintainer>
+      <name>Gen B0rk</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
