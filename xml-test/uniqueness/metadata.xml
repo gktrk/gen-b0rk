@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <longdescription>
+    Tests for the uniqueness of elements.
+
+    Uniqueness focuses on element, attribute, value combinations
+    which must not repeat.
+
+    The tests are conservative: i.e. if we check the
+    (longdescription, lang, restrict) combination, we do not check
+    (slots,lang, restrict).
+  </longdescription>
+  <!-- non-unique (longdescription, lang, restrict) combination -->
+  <longdescription lang='en'>uniqueness violation</longdescription>
+  <maintainer type='person'>
+    <email>gen-b0rk@gentoo.org</email>
+  </maintainer>
+  <maintainer type='project'>
+    <!-- non-unique (maintainer, email, restrict) combination -->
+    <email>gen-b0rk@gentoo.org</email>
+  </maintainer>
+  <slots>
+    <slot name="0">Match the SONAME of libuniqueness.so</slot>
+    <!-- non-unique (slot, name, restrict) combination -->
+    <slot name="0">uniqueness violation</slot>
+  </slots>
+  <use>
+    <flag name="foo">Enable feature foo</flag>
+    <!-- non-unique (flag, name, restrict) combination -->
+    <flag name="foo">uniqueness violation</flag>
+  </use>
+</pkgmetadata>
