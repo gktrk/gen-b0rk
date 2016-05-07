@@ -14,6 +14,7 @@
     <email>upstream@example.com</email>
     <name>Upstream Developer</name>
     <description>Upstream developer, wishing to be CC-ed on bugs</description>
+    <description lang="tr">Ana geliştirici, hata raporlarında CC'ye ekle</description>
   </maintainer>
   <longdescription>
     First paragraph of extensive description.
