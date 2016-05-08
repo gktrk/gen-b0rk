@@ -14,28 +14,28 @@
   <maintainer type='person'>
     <email>gen-b0rk@gentoo.org</email>
     <!-- multiple <email> elements are not allowed -->
-    <email>at-most-one-violation@gentoo.org</email>
+    <email>at-most-one-violation@gentoo.org</email> <!-- B0RK: -->
   </maintainer>
   <slots>
     <subslots>Match SONAME of libsingularity.so</subslots>
     <!-- multiple <subslots> elements are not allowed -->
-    <subslots>at-most-one violation</subslots>
+    <subslots>at-most-one violation</subslots> <!-- B0RK: -->
   </slots>
   <upstream>
     <maintainer>
       <name>Gen B0rk</name>
       <!-- multiple <name> elements are not allowed -->
-      <name>at-most-one violation</name>
+      <name>at-most-one violation</name> <!-- B0RK: -->
     </maintainer>
     <changelog>https://gitweb.gentoo.org/repo/proj/gen-b0rk.git/</changelog>
     <!-- multiple <changelog> elements are not allowed -->
-    <changelog>https://gentoo.org/at-most-one-violation.html</changelog>
+    <changelog>https://gentoo.org/at-most-one-violation.html</changelog> <!-- B0RK: -->
     <bugs-to>http://www.example.com/issues.html</bugs-to>
     <!-- multiple <bugs-to> elements are not allowed -->
-    <bugs-to>https://gentoo.org/at-most-one-violation</bugs-to>
+    <bugs-to>https://gentoo.org/at-most-one-violation</bugs-to> <!-- B0RK: -->
   </upstream>
   <!-- multiple <upstream> elements are not allowed -->
-  <upstream>
+  <upstream> <!-- B0RK: -->
     <maintainer>
       <name>Gen B0rk</name>
     </maintainer>

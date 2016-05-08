@@ -22,17 +22,17 @@
       There's no point in reporting (3) due to (2), so it
       should only print errors for the first two.
   -->
-  <maintainer type='cow' status='retired'>
+  <maintainer type='cow' status='retired'> <!-- B0RK: --> <!-- B0RK: -->
     <email>larry@gentoo.org</email>
     <!-- invalid value for lang -->
-    <description lang="english">Moo</description>
+    <description lang="english">Moo</description> <!-- B0RK: -->
   </maintainer>
   <upstream>
     <!-- type attribute isn't allowed in upstream maintainer -->
-    <maintainer status='active' type='person'>
+    <maintainer status='active' type='person'> <!-- B0RK: -->
       <name>Gen B0rk</name>
     </maintainer>
     <!-- invalid value for type -->
-    <remote-id type='gen-b0rk'>gentoo/gen-b0rk</remote-id>
+    <remote-id type='gen-b0rk'>gentoo/gen-b0rk</remote-id> <!-- B0RK: -->
   </upstream>
 </pkgmetadata>

@@ -5,12 +5,12 @@
     Tests for mandatory elements
   </longdescription>
   <!-- Missing element <email> -->
-  <maintainer type='person'>
+  <maintainer type='person'> <!-- B0RK: -->
     <name>Gen B0rk</name>
   </maintainer>
   <upstream>
     <!-- Missing element <name> -->
-    <maintainer>
+    <maintainer> <!-- B0RK: -->
       <email>gen-b0rk@gentoo.org</email>
     </maintainer>
   </upstream>

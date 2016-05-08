@@ -2,20 +2,20 @@
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
   <!-- Missing attribute "type" -->
-  <maintainer>
+  <maintainer> <!-- B0RK: -->
     <email>foodev@gentoo.org</email>
   </maintainer>
   <slots>
     <!-- Missing attribute "name" -->
-    <slot>Bar slot</slot>
+    <slot>Bar slot</slot> <!-- B0RK: -->
   </slots>
   <use>
     <!-- Missing attribute "name" -->
-    <flag>Baz flag</flag>
+    <flag>Baz flag</flag> <!-- B0RK: -->
   </use>
   <upstream>
     <!-- Missing attribute "type" -->
-    <remote-id>gentoo/gen-b0rk</remote-id>
+    <remote-id>gentoo/gen-b0rk</remote-id> <!-- B0RK: -->
   </upstream>
   <longdescription>
     Tests for mandatory attributes for various tags

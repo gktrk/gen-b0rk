@@ -12,22 +12,22 @@
     (slots,lang, restrict).
   </longdescription>
   <!-- non-unique (longdescription, lang, restrict) combination -->
-  <longdescription lang='en'>uniqueness violation</longdescription>
+  <longdescription lang='en'>uniqueness violation</longdescription> <!-- B0RK: -->
   <maintainer type='person'>
     <email>gen-b0rk@gentoo.org</email>
   </maintainer>
-  <maintainer type='project'>
+  <maintainer type='project'> <!-- B0RK: -->
     <!-- non-unique (maintainer, email, restrict) combination -->
     <email>gen-b0rk@gentoo.org</email>
   </maintainer>
   <slots>
     <slot name="0">Match the SONAME of libuniqueness.so</slot>
     <!-- non-unique (slot, name, restrict) combination -->
-    <slot name="0">uniqueness violation</slot>
+    <slot name="0">uniqueness violation</slot> <!-- B0RK: -->
   </slots>
   <use>
     <flag name="foo">Enable feature foo</flag>
     <!-- non-unique (flag, name, restrict) combination -->
-    <flag name="foo">uniqueness violation</flag>
+    <flag name="foo">uniqueness violation</flag> <!-- B0RK: -->
   </use>
 </pkgmetadata>
